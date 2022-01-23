@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    padding: 2rem;
+    background-color:rgba(236, 240, 252, 1);
+    font-family: 'Inter', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+/* --------------------------Skelton---------------------- */
+
+.header-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 21rem;
+}
+.component-title{
+    grid-column: 1/-1;
+    justify-self: center;
+}
+.header-sample-text{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.header-sample-text__nav{
+    padding: 1rem 8px;
+    display: flex;
+    align-items: center;
+}
+.header-sample-text__nav>h1{
+    margin-right: auto;
+}
+.sample-text{
+    padding: 1rem;
+    background-color: white;
+}
+
+.fas{
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.header-fixed{
+    position: sticky;
+    top: 0;
+}
+.header-dense__nav{
+    padding:6px ;
+}
+.header-short{
+    width: max-content;
+    position: sticky;
+    top: 0;
+    border-radius: 0 0 2rem 0;
+}
+
+.badge-examples{
+    grid-column: 1/-1;
+}
+.badge-text{
+    display: inline-block;
+    position: relative;
+}
+.badge{
+    position: absolute;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: medium;
+    border-radius: 50%;
+    background-color: #6200ee;
+    color: white;
+}
+.badge-basic{
+    top: -8px;
+}
+.badge-large{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: larger;
+    top: -16px;
+    right: -16px;
+}
+
+.primary-btn{
+    background-color: #3f51b5;
+    padding: 8px 16px;
+    margin: 1rem;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+.primary-btn:hover{
+    background-color: #2e3b85;
+    box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+}
+
+.white-btn{
+    background-color: white;
+    color: black;
+}
+.white-btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024, 0 3px 14px 2px #0000001f;
+}
+.badge-btn{
+    position: relative;
+}
+.badge-on-btn{
+    background-color: rgb(250, 54, 129);
+    left: -8px;
+    top: -12px;
+}
+/* ------------------------Skin----------------------- */
+
+.header-sample-text{
+    background-color: white;
+}
+.header-sample-text__nav{
+    background-color: #6200ee;
+    color: white;
+}
+
+#toggle-header{
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0;
+    transition: all 300ms linear;
+}
+#toggle-header:hover{
+    border-radius:50%;
+    background-color: #8c74ad;
+}
+
+nav .fas:hover{
+    padding: 1rem;
+    margin: 0;
+    border-radius: 50%;
+    background-color: #8c74ad;
+}
